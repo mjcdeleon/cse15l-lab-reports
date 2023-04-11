@@ -6,7 +6,7 @@ Hello! And welcome to the course! First, we if you plan to use your personal com
 Install [Visual Studio Code](https://code.visualstudio.com/) to your personal device, there are instructions on the site to which you can follow for help when installing.
 
 After installing, you should end up with a screen such as this
-![Homescreen](Step one.png)
+![Image](Step one.png)
 For me, I had downloaded VSCode through the website first.
 Next, I set up the program as desired.
 
@@ -36,7 +36,7 @@ You will type 'yes' so as to log in, from here another message will appear:
 Input your course-specific password. (It is important to note that as you type the characters will not appear within the terminal visibly, however these characters are still being inputted)
 
 Once logged in, you will receive this message:
-![Login Example](Step two.png)
+![Image](Step two.png)
 
 Here as explained I had input the command `ssh cs15lsp23--@ieng8.ucsd.edu` (of course using my own two letters for my account in place of the '--')
 Then I had input my password as asked!
@@ -54,7 +54,7 @@ List commands here:
 * cat
 
 Below is an example of some of these commands in action:
-![Command example](Step three.png)
+![Image](Step three.png)
 
 Here I simply used some of the commands listed above:
 * pwd - which prints out the current working directly
