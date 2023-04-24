@@ -60,18 +60,22 @@ Below is an example of some of these commands in action:
 
 **ls**
 ![Image](four.png)
+
 Here is the ls command in action! What this does is simply list all the directories in which you are currently working in!
 
 **ls -a**
 ![Image](five.png)
+
 Here is the result of using the ls -a! What this command does is list out all the directories at which are available to be accessed and used.
 
 **ls -lat**
 ![Image](six.png)
+
 Here is ls -lat! This command not only lists out all the available directories but also the last time at which they are accessed by users on the server and the number of users too!
 
 **cd ..  and cd ~ and pwd**
 ![Image](seven.png)
+
 Here is both the cd .. , cd ~ , and pwd commands at work. As you can see I first use the pwd command which prints out the current path and working directory that you are in. Next I use the cd .. command which takes you a folder closer towards the parent directory, which you can see when we use the pwd command it prints the new working directory. Now if we use the cd ~ command, it brings us to the folder or file forward, using the pwd we can see we are now back at the original directory we started in!
 
 # Completed!
