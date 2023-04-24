@@ -49,17 +49,15 @@ Here is a list of some commands you can try:
 List commands here:
 * cd
 * cd ..
+* cd ~
 * ls
+* ls -a
+* ls -lat
 * pwd
 * cat
 
 Below is an example of some of these commands in action:
-![Image](three.png)
 
-Here I simply used some of the commands listed above:
-* pwd - which prints out the current working directly
-* ls - which prints out the files in the current directly, in my example it is hello.txt and perl5
-* cd .. which takes me back one at a time for each directly, as you can see in the example above I used it to get from the hello.txt file to the ieng6 file
 
 
 # Completed!
