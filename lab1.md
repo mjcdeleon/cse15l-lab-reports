@@ -58,11 +58,13 @@ List commands here:
 
 Below is an example of some of these commands in action:
 
+
 **ls**
 
 ![Image](four.png)
 
 Here is the ls command in action! What this does is simply list all the directories in which you are currently working in!
+
 
 **ls -a**
 
@@ -70,11 +72,13 @@ Here is the ls command in action! What this does is simply list all the director
 
 Here is the result of using the ls -a! What this command does is list out all the directories at which are available to be accessed and used.
 
+
 **ls -lat**
 
 ![Image](six.png)
 
 Here is ls -lat! This command not only lists out all the available directories but also the last time at which they are accessed by users on the server and the number of users too!
+
 
 **cd ..  and cd ~ and pwd**
 
