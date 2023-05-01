@@ -27,6 +27,7 @@
 `
 ## The symptom as an output running of the tests
 
+
 ## The bug
 ### BEFORE CHANGE
 `  static int[] reversed(int[] arr) {
