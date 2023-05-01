@@ -8,7 +8,7 @@
 ## A failure-inducing input
 `
    @Test
- public void testReverseInPlace3(){
+   public void testReverseInPlace3(){
   int[] input2 = {1,2};
   int[] expected2 = {2,1};
   assertArrayEquals(ArrayExamples.reversed(input2), expected2);
