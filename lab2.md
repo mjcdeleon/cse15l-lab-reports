@@ -14,12 +14,12 @@
   assertArrayEquals(ArrayExamples.reversed(input2), expected2);
  }
  `
-`@Test  
+@Test ( < br> )
 public void testReverseInPlace2(){  
 int[] input2 = {1,2};  
 int[] expected2 = {2,1};  
 assertArrayEquals(ArrayExamples.reversed(input2), expected2);  
-`
+
 
 ## An input that does not produce a failure
 `
