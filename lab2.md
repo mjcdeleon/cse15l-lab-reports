@@ -6,8 +6,23 @@
 # Part 2
 
 ## A failure-inducing input
+`   @Test
+ public void testReverseInPlace3(){
+  int[] input2 = {1,2};
+  int[] expected2 = {2,1};
+  assertArrayEquals(ArrayExamples.reversed(input2), expected2);
+ }
+`
 
 ## An input that does not produce a failure
+`  @Test
+  public void testReverseInPlace2(){
+    int[] input2 = {1,2,3,4};
+    ArrayExamples.reverseInPlace(input2);
+    assertArrayEquals(new int[]{4,3,2,1}, input2);
+
+	}
+`
 
 ## The symptom as an output running of the tests
 
