@@ -5,7 +5,32 @@
 
 # Part 2
 
+## A failure-inducing input
 
+## An input that does not produce a failure
+
+## The symptom as an output running of the tests
+
+## The bug
+### BEFORE CHANGE
+`  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+`
+
+### AFTER CHANGE
+`  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+`
 
 
 # Part 3
