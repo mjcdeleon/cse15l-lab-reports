@@ -14,7 +14,8 @@
   assertArrayEquals(ArrayExamples.reversed(input2), expected2);
  }
  `
-
+@Test
+public void testReverseInPlace3(){
 
 ## An input that does not produce a failure
 `
