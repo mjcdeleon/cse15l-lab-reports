@@ -6,7 +6,8 @@
 # Part 2
 
 ## A failure-inducing input
-`   @Test
+`
+   @Test
  public void testReverseInPlace3(){
   int[] input2 = {1,2};
   int[] expected2 = {2,1};
@@ -16,7 +17,8 @@
 
 
 ## An input that does not produce a failure
-`  @Test
+`
+  @Test
   public void testReverseInPlace2(){
     int[] input2 = {1,2,3,4};
     ArrayExamples.reverseInPlace(input2);
