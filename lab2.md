@@ -26,7 +26,7 @@
 	} 
 `
 ## The symptom as an output running of the tests
-
+![Image](Symptoms.png)
 
 ## The bug
 ### BEFORE CHANGE
