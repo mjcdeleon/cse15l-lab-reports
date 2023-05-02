@@ -48,7 +48,7 @@ static int[] reversed(int[] arr) {
 	return newArray;  
 }
 ```
-**Explanation**
+**Explanation**  
 This change helped to fix the bug as previously, what was being returned was the original array. On top of that, the changes of the original array at certain indexes were to be set equal to the matching index of 'newArray' which held no values. As such, the return statement as well which array was being appended was switch in order to fix the issue. Thus, 'newArray' was the array being appended as the reverse of 'arr', and as such was put in the return statement.
 
 # Part 3
