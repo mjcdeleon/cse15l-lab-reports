@@ -16,35 +16,38 @@ public void testReverseInPlace2(){
 ```
 
 ## An input that does not produce a failure
+```
 @Test  
 public void testReverseInPlace2(){  
-|    int[] input2 = {1,2,3,4};  
-|    ArrayExamples.reverseInPlace(input2);  
-|    assertArrayEquals(new int[]{4,3,2,1}, input2);  
+	int[] input2 = {1,2,3,4};  
+	ArrayExamples.reverseInPlace(input2);  
+	assertArrayEquals(new int[]{4,3,2,1}, input2);  
 }
-
+```
 ## The symptom as an output running of the tests
 ![Image](Symptoms.png)
 
 ## The bug
 ### BEFORE CHANGE
+```
 static int[] reversed(int[] arr) {  
-|    int[] newArray = new int[arr.length];
-|    for(int i = 0; i < arr.length; i += 1) {  
-|        arr[i] = newArray[arr.length - i - 1];  
-|    }  
-|    return arr;  
+	int[] newArray = new int[arr.length];
+	for(int i = 0; i < arr.length; i += 1) {  
+		arr[i] = newArray[arr.length - i - 1];  
+	}  
+	return arr;  
 }
+```
 ### AFTER CHANGE
-
+```
 static int[] reversed(int[] arr) {  
-|    int[] newArray = new int[arr.length];  
-|    for(int i = 0; i < arr.length; i += 1) {  
-|        newArray[i] = arr[arr.length - i -1];  
-|    }  
-|    return newArray;  
+	int[] newArray = new int[arr.length];  
+	for(int i = 0; i < arr.length; i += 1) {  
+		newArray[i] = arr[arr.length - i -1];  
+	}  
+	return newArray;  
 }
-
+```
   
 
 # Part 3
