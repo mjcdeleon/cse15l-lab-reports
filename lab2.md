@@ -2,7 +2,7 @@
 
 
 
-
+---
 # Part 2
 
 ## A failure-inducing input
@@ -47,9 +47,14 @@ static int[] reversed(int[] arr) {
 	}  
 	return newArray;  
 }
-```
+```  
+What was changed here is in line 4 and line 6. In line 4, it was changed so that 'newArray' would be the array that would receive the reverse order, as opposed to trying to reorganize the original array. In line 6, since it is 'newArray' that would be the array that is in reverse order it should also be the array that is in the return statement.  
+
+
 **Explanation**  
 This change helped to fix the bug as previously, what was being returned was the original array. On top of that, the changes of the original array at certain indexes were to be set equal to the matching index of 'newArray' which held no values. As such, the return statement as well which array was being appended was switch in order to fix the issue. Thus, 'newArray' was the array being appended as the reverse of 'arr', and as such was put in the return statement.
 
+
+---
 # Part 3
 Something I had learned from week 2 was about the structure of a URL and the breakdown of each component. I learned the correct terminology for all parts of the URL. Previously I had only known about the domain of a URL, after week 2 I learned about the protocol, path/part, query, and anchor/fragment.
