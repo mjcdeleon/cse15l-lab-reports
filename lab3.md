@@ -1,3 +1,3 @@
 # Less command
 The less command helps to funnel down the files found when using the command to just a screenful of outputs that fit the desired description. Some useful notes to know when using the less command is that you are able to control the amount of content being displayed as you go along. So for instance, if you had used the less command and the page of files fitting the search come up, you can continue to scroll through the results one by one using the up and down keys on a keyboard. Or, if you'd rather go page by page you can go down an entire page of results by using the spacebar.
-** bold? **
+## bold? ##
