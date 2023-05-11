@@ -16,7 +16,7 @@ The methods in my code that are being called are the handleRequest method and th
 ## Output of second example of using the /add-message
 ![Image](SeconeExample_Output.png)
 
-The methods in my code that are being called are the handleRequest method and the class StringServer. The class StringServer checks to see if there are the correct amount of arguments in the command being given, in order for the server to run and work properly. The handleRequest method checks to see which messages are to be shown.
+
 ---
 # Part 2
 
