@@ -1,7 +1,22 @@
 # Part 1
-![Image](StringServer.png)
+## My code for StringServer
+![Image](StringServerUpdate.png)
 
+## First example of using the /add-message
+![Image](FirstExample.png)
 
+## Output of first example of using the /add-message
+![Image](FirstExample_Output.png)
+
+The methods in my code that are being called are the handleRequest method and the class StringServer. The class StringServer checks to see if there are the correct amount of arguments in the command being given, in order for the server to run and work properly. The handleRequest method checks to see which messages are to be shown.
+
+## Second example of using the /add-message
+![Image](SecondExample.png)
+
+## Output of second example of using the /add-message
+![Image](SeconeExample_Output.png)
+
+The methods in my code that are being called are the handleRequest method and the class StringServer. The class StringServer checks to see if there are the correct amount of arguments in the command being given, in order for the server to run and work properly. The handleRequest method checks to see which messages are to be shown.
 ---
 # Part 2
 
