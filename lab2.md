@@ -10,6 +10,8 @@
 
 The methods in my code that are being called are the handleRequest method and the class StringServer. The class StringServer checks to see if there are the correct amount of arguments in the command being given, in order for the server to run and work properly. The handleRequest method checks to see which messages are to be shown.
 
+
+The relevant arguments to the handleRequest method is the String '/add-message' what this does is it meets a condition to let the server know that when printing the home page, there is a new message to be added.
 ## Second example of using the /add-message
 ![Image](SecondExample.png)
 
@@ -17,6 +19,8 @@ The methods in my code that are being called are the handleRequest method and th
 ![Image](SecondExample_Output.png)
 
 The methods in my code that are being used here are also handleRequest and the class StringServer. As before the class StringServer works in tandem with the class Server so as to ensure that the correct amount and correct type of arguments are in the command line in order to start and run the server properly. Here since the first example of the /add-message was inputted, the second example is added to the previous message. As such, it moves further down the handleRequest method, adding itself along with the already inputted message from the first example.
+
+The relevant arguments for the handleRequest method is the '/add-message' String as this specific string let's the server know to add a new message to the home page.
 
 ---
 # Part 2
