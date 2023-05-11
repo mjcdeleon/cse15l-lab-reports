@@ -14,8 +14,9 @@ The methods in my code that are being called are the handleRequest method and th
 ![Image](SecondExample.png)
 
 ## Output of second example of using the /add-message
-![Image](SeconeExample_Output.png)
+![Image](SecondExample_Output.png)
 
+The methods in my code that are being used here are also handleRequest and the class StringServer. As before the class StringServer works in tandem with the class Server so as to ensure that the correct amount and correct type of arguments are in the command line in order to start and run the server properly. Here since the first example of the /add-message was inputted, the second example is added to the previous message. As such, it moves further down the handleRequest method, adding itself along with the already inputted message from the first example.
 
 ---
 # Part 2
