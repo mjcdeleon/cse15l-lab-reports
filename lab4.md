@@ -34,7 +34,7 @@ Keys Pressed: `<control> + <r>`, then type 'vim', I used this way in order to ge
 
 
 # Run the tests, demonstrating that they now succeed  
-![Image](TestSuccess (1).png)
+![Image](TestSuccess.png)
 
 
 Here I had redone the same actions I had earlier when proving that the tests failed, however, here they now succeed. 
