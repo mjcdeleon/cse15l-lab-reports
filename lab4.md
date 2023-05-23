@@ -2,7 +2,7 @@
 ![Image](LoggingIn.png)  
 
 
-<up><up><enter>  
+`<up><up><enter>  `
   
 
 Clone your fork of the repository from your Github account  
