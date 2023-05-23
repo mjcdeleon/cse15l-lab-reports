@@ -8,6 +8,7 @@ control + r
 then type 'git'   
 was the first result of reverse search, git clone https://github.com/mjcdeleon/lab7.gi
 t  
+control + r cd lab7
 
 Run the tests, demonstrating that they fail  
 control + r  
@@ -18,7 +19,7 @@ was the first result of reverse search, javac ListExamples.java ListExamplesTest
 
 Edit the code file to fix the failing test  
 vim ListExamples.java  
-43 down  
+6 up 
 11 right  
 x key  
 i key  
@@ -31,4 +32,3 @@ javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
 java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests  
 Now show screenshot
 
-Commit and push the resulting change to your Github account (you can pick any commit message!)
