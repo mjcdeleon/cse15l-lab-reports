@@ -1,5 +1,5 @@
 # Log into ieng6
-![Image](LoggingIn.png)
+![Image](LoggingIn.png)  
 <up><up><enter>  
   
 
