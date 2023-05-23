@@ -1,6 +1,6 @@
-Log into ieng6  
-2 up  
-enter  
+# Log into ieng6
+![Image](LoggingIn.png)
+'<up><up><enter>'  
   
 
 Clone your fork of the repository from your Github account  
