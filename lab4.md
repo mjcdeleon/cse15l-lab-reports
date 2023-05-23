@@ -17,6 +17,7 @@ was the first result of reverse search, javac ListExamples.java ListExamplesTest
 
 
 Edit the code file to fix the failing test  
+vim ListExamples.java  
 43 down  
 11 right  
 x key  
