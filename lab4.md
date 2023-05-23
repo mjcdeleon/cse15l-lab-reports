@@ -17,6 +17,17 @@ was the first result of reverse search, javac ListExamples.java ListExamplesTest
 
 
 Edit the code file to fix the failing test  
+43 down  
+11 right  
+x key  
+i key  
+2  
+changed the 1 to a 2  
 
-Run the tests, demonstrating that they now succeed
+
+Run the tests, demonstrating that they now succeed  
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java  
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests  
+Now show screenshot
+
 Commit and push the resulting change to your Github account (you can pick any commit message!)
