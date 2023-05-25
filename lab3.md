@@ -7,132 +7,69 @@ The less command helps to funnel down the files found when using the command to 
 ## Less command line options
 
 ### Less -?
-`less -?`
-When this command is used in the terminal this is the output:
+
+
+
+
+
+
+
+### Less -F (filename)
+`less -F technical`
+When this command is used in the terminal this is the output:   
 ```
-                 SUMMARY OF LESS COMMANDS
+[cs15lsp23dw@ieng6-201]:stringsearch-data:416$ less -F technical
+total 104
+drwxr-s--- 6 cs15lsp23dw ieng6_cs15lsp23  4096 May  8 20:19 ./
+drwxr-s--- 4 cs15lsp23dw ieng6_cs15lsp23  4096 May  8 20:20 ../
+drwxr-s--- 2 cs15lsp23dw ieng6_cs15lsp23  4096 May  8 20:07 911report/
+drwxr-s--- 2 cs15lsp23dw ieng6_cs15lsp23 65536 May  8 20:07 biomed/
+-rw-r----- 1 cs15lsp23dw ieng6_cs15lsp23     0 May  8 20:19 find-results.txt      
+drwxr-s--- 8 cs15lsp23dw ieng6_cs15lsp23  4096 May  8 20:07 government/
+drwxr-s--- 2 cs15lsp23dw ieng6_cs15lsp23 20480 May  8 20:07 plos/
+[cs15lsp23dw@ieng6-201]:stringsearch-data:417$   
+```   
 
-      Commands marked with * may be preceded by a number, N.
-      Notes in parentheses indicate the behavior if N is given.
-      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.   
+When this command is run the current directory is stringsearch-data. As you can see here, unlike the other commands of less, when the -F is present in the command prompt, the user is able to stay on the terminal screen. However, this is true if and only if the contents does not take up an entire screen. As seen in the next example:   
 
-  h  H                 Display this help.
-  q  :q  Q  :Q  ZZ     Exit.
- --------------------------------------------------------------------------- 
 
-                           MOVING
 
-  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
-  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
-  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
-  b  ^B  ESC-v      *  Backward one window (or N lines).
-  z                 *  Forward  one window (and set window to N).
-  w                 *  Backward one window (and set window to N).
-  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.   
-  d  ^D             *  Forward  one half-window (and set half-window to N).  
-  u  ^U             *  Backward one half-window (and set half-window to N).  
-  ESC-)  RightArrow *  Left  one half screen width (or N positions).
-  ESC-(  LeftArrow  *  Right one half screen width (or N positions).
-  F                    Forward forever; like "tail -f".
-  r  ^R  ^L            Repaint screen.
-  R                    Repaint screen, discarding buffered input.
-        ---------------------------------------------------
-        Default "window" is the screen height.
-        Default "half-window" is half of the screen height.
- --------------------------------------------------------------------------- 
 
-                          SEARCHING
-
-  /pattern          *  Search forward for (N-th) matching line.
-  ?pattern          *  Search backward for (N-th) matching line.
-  n                 *  Repeat previous search (for N-th occurrence).
-  N                 *  Repeat previous search in reverse direction.
-  ESC-n             *  Repeat previous search, spanning files.
-  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
-  ESC-u                Undo (toggle) search highlighting.
-  &pattern          *  Display only matching lines
-        ---------------------------------------------------
-        A search pattern may be preceded by one or more of:
-HELP -- Press RETURN for more, or q when done
+`less -F biomed`
+When this command is used in the terminal this is the output:   
 ```
+total 30316
+drwxr-s--- 2 cs15lsp23dw ieng6_cs15lsp23  65536 May  8 20:07 ./
+drwxr-s--- 6 cs15lsp23dw ieng6_cs15lsp23   4096 May  8 20:19 ../
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  24112 May  8 20:07 1468-6708-3-1.txt*   
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  29585 May  8 20:07 1468-6708-3-10.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  16882 May  8 20:07 1468-6708-3-3.txt*   
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  31378 May  8 20:07 1468-6708-3-4.txt*   
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  18114 May  8 20:07 1468-6708-3-7.txt*   
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  24028 May  8 20:07 1471-2091-2-10.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  35103 May  8 20:07 1471-2091-2-11.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  24851 May  8 20:07 1471-2091-2-12.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  27970 May  8 20:07 1471-2091-2-13.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  18716 May  8 20:07 1471-2091-2-16.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  45414 May  8 20:07 1471-2091-2-5.txt*   
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  25458 May  8 20:07 1471-2091-2-7.txt*   
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  25298 May  8 20:07 1471-2091-2-9.txt*   
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  29139 May  8 20:07 1471-2091-3-13.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  54849 May  8 20:07 1471-2091-3-14.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  34209 May  8 20:07 1471-2091-3-15.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  35953 May  8 20:07 1471-2091-3-16.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  29469 May  8 20:07 1471-2091-3-17.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  40558 May  8 20:07 1471-2091-3-18.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  40379 May  8 20:07 1471-2091-3-22.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  33815 May  8 20:07 1471-2091-3-23.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  34168 May  8 20:07 1471-2091-3-30.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  56000 May  8 20:07 1471-2091-3-31.txt*  
+-rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  52697 May  8 20:07 1471-2091-3-4.txt*   
+biomed   
+```   
 
 
-
-
-
-
-### Less -V
-`less -V`
-When this command is used in the terminal this is the output:
-```
-less 458 (POSIX regular expressions)
-Copyright (C) 1984-2012 Mark Nudelman
-
-less comes with NO WARRANTY, to the extent permitted by law.
-For information about the terms of redistribution,
-see the file named README in the less distribution.
-Homepage: http://www.greenwoodsoftware.com/less
-```
-
-
-
-
-
-
-
-
-
-
-### Less --help
-`less --help`
-When this command is used in the terminal this is the output:
-```
-    Commands marked with * may be preceded by a number, N.
-      Notes in parentheses indicate the behavior if N is given.
-      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.   
-
-  h  H                 Display this help.
-  q  :q  Q  :Q  ZZ     Exit.
- --------------------------------------------------------------------------- 
-
-                           MOVING
-
-  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
-  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
-  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
-  b  ^B  ESC-v      *  Backward one window (or N lines).
-  z                 *  Forward  one window (and set window to N).
-  w                 *  Backward one window (and set window to N).
-  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.   
-  d  ^D             *  Forward  one half-window (and set half-window to N).  
-  u  ^U             *  Backward one half-window (and set half-window to N).  
-  ESC-)  RightArrow *  Left  one half screen width (or N positions).
-  ESC-(  LeftArrow  *  Right one half screen width (or N positions).
-  F                    Forward forever; like "tail -f".
-  r  ^R  ^L            Repaint screen.
-  R                    Repaint screen, discarding buffered input.
-        ---------------------------------------------------
-        Default "window" is the screen height.
-        Default "half-window" is half of the screen height.
- --------------------------------------------------------------------------- 
-
-                          SEARCHING
-
-  /pattern          *  Search forward for (N-th) matching line.
-  ?pattern          *  Search backward for (N-th) matching line.
-  n                 *  Repeat previous search (for N-th occurrence).
-  N                 *  Repeat previous search in reverse direction.
-  ESC-n             *  Repeat previous search, spanning files.
-  ESC-N             *  Repeat previous search, reverse dir. & spanning files.
-  ESC-u                Undo (toggle) search highlighting.
-  &pattern          *  Display only matching lines
-        ---------------------------------------------------
-        A search pattern may be preceded by one or more of:
-HELP -- Press RETURN for more, or q when done
-```
-
-
-
+When this command is run the current directory is technical. Unlike in the previous example, this output of the less command appeared on a different screen, one in which the user has to manually exit in order to return to the terminal. Since the contents of biomed take up the entire screen/ more than the entire screen a new screen is shown. Here one must use the q key in order to exit.
 
 
 
