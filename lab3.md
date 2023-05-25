@@ -334,4 +334,4 @@ of her work at the Inner City Law Center, which she founded in
 19%
 ```   
 
-Here I pressed the down arrow key three times and the percentage at the bottome increased as well!
+Here I pressed the down arrow key three times and the percentage at the bottom increased as well!
