@@ -6,8 +6,6 @@ The less command helps to funnel down the files found when using the command to 
 
 ## Less command line options
 
-### Less -?
-
 
 
 
@@ -71,6 +69,62 @@ biomed
 
 When this command is run the current directory is technical. Unlike in the previous example, this output of the less command appeared on a different screen, one in which the user has to manually exit in order to return to the terminal. Since the contents of biomed take up the entire screen/ more than the entire screen a new screen is shown. Here one must use the q key in order to exit.
 
+
+
+
+
+### Less -N (filename)
+`less -N -F technical`   
+When this command is used in the terminal this is the output:   
+```   
+[cs15lsp23dw@ieng6-201]:stringsearch-data:420$ less -N -F technical
+      1 total 104
+      2 drwxr-s--- 6 cs15lsp23dw ieng6_cs15lsp23  4096 May  8 20:19 ./
+      3 drwxr-s--- 4 cs15lsp23dw ieng6_cs15lsp23  4096 May  8 20:20 ../
+      4 drwxr-s--- 2 cs15lsp23dw ieng6_cs15lsp23  4096 May  8 20:07 911report/    
+      5 drwxr-s--- 2 cs15lsp23dw ieng6_cs15lsp23 65536 May  8 20:07 biomed/       
+      6 -rw-r----- 1 cs15lsp23dw ieng6_cs15lsp23     0 May  8 20:19 find-results.txt
+      7 drwxr-s--- 8 cs15lsp23dw ieng6_cs15lsp23  4096 May  8 20:07 government/   
+      8 drwxr-s--- 2 cs15lsp23dw ieng6_cs15lsp23 20480 May  8 20:07 plos/
+[cs15lsp23dw@ieng6-201]:stringsearch-data:421$   
+```   
+When this command was run the current directory was stringsearch-data. As you can see here I had combined the -N with the previous example of -F. -F works as explained before, keeping its user in the terminal so long as the contents of the desired file do not need an entire new screen, but what is different here is that with the addition of -N each line is now numbered.   
+
+
+`less -N Media`
+When this command is used in ther terminal this is the output:   
+```   
+      1 total 896
+      2 drwxr-s--- 2 cs15lsp23dw ieng6_cs15lsp23 12288 May  8 20:07 ./
+      3 drwxr-s--- 8 cs15lsp23dw ieng6_cs15lsp23  4096 May  8 20:07 ../
+      4 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  3035 May  8 20:07 5_Legal_Groups.txt*
+      5 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2401 May  8 20:07 AP_LawSchoolDebts.txt*
+      6 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2187 May  8 20:07 A_Perk_of_Age.txt*
+      7 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  7163 May  8 20:07 A_helping_hand.txt*
+      8 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  6261 May  8 20:07 Abuse_penalties.txt*
+      9 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2869 May  8 20:07 Advocate_for_Poor.txt*
+     10 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2851 May  8 20:07 Aid_Gets_7_Million.txt*
+     11 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2183 May  8 20:07 All_May_Have_Justice.txt*
+     12 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  4866 May  8 20:07 Annual_Fee.txt*
+     13 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  5947 May  8 20:07 Anthem_Payout.txt*
+     14 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23 10950 May  8 20:07 Assuring_Underprivileged.txt*
+     15 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2244 May  8 20:07 Attorney_gives_his_time.txt*
+     16 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  7375 May  8 20:07 Avoids_Budget_Cut.txt*
+     17 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2154 May  8 20:07 Barnes_Volunteers.txt*
+     18 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  4540 May  8 20:07 Barnes_new_job.txt*
+     19 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2241 May  8 20:07 Barnes_pro_bono.txt*
+     20 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  3951 May  8 20:07 Barr_sharpening_ax.txt*
+     21 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  7511 May  8 20:07 BergenCountyRecord.txt*
+     22 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2156 May  8 20:07 Bias_on_the_Job.txt*
+     23 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2106 May  8 20:07 Boone_legal_service.txt*
+     24 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  5442 May  8 20:07 Bridging_legal_aid_gap.txt*
+     25 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  5613 May  8 20:07 BusinessWire.txt*
+     26 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  2421 May  8 20:07 BusinessWire2.txt*
+     27 -rwxr-x--- 1 cs15lsp23dw ieng6_cs15lsp23  3459 May  8 20:07 Butler_Co_attorneys.txt*
+:
+```   
+
+When this command was run the current directory
 
 
 
