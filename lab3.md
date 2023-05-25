@@ -11,7 +11,6 @@ The less command helps to funnel down the files found when using the command to 
 
 
 
-
 ### Less -F (filename)
 `less -F technical`
 When this command is used in the terminal this is the output:   
