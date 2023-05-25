@@ -124,7 +124,7 @@ When this command is used in ther terminal this is the output:
 :
 ```   
 
-When this command was run the current directory
+When this command was run the current directory was government. Here with the less command not only is it showing a preview/ sample of the text files found within the government folder but with the -N present within the command the lines are also numbered. Hit the q key to return back to the terminal.
 
 
 
@@ -209,3 +209,130 @@ What this command does is it shows a small sample of the given text file. For th
 
 
 
+### Less -m filename   
+`less -m journal.pbio.0020001.txt`   
+When this command is used in the terminal this is the output:   
+```
+        Kofi Annan, the Secretary-General of the United Nations, recently called attention to
+        the clear inequalities in science between developing and developed countries and to the
+        challenges of building bridges across these gaps that should bring the United Nations and
+        the world scientific community closer to each other (Annan 2003). Mr. Annan stressed the
+        importance of reducing the inequalities in science between developed and developing
+        countries, asserting that <E2><80><9C>This unbalanced distribution of scientific activity generates
+        serious problems not only for the scientific community in the developing countries, but for
+        development itself.<E2><80><9D> Indeed, Mr. Annan's sentiments have also been echoed recently by
+        several scientists, who present overwhelming evidence for the disparity in scientific
+        output between the developing and already developed countries (Gibbs 1995; May 1997;
+        Goldemberg 1998; Riddoch 2000). For example, recent United Nations Educational, Scientific,
+        and Cultural Organization (UNESCO) estimates (UNESCO 2001) indicate that, in 1997, the
+        developed countries accounted for some 84% of the global investment in scientific research
+        and development, had approximately 72% of the world researchers, and produced approximately
+        88% of all scientific and technical publications registered by the Science Citation Index
+        (SCI). North America and Europe clearly dominate the number of scientific publications
+        produced annually, with 36.6% and 37.5%, respectively, worldwide (UNESCO 2001).
+
+
+            North America and Europe clearly dominate the number of scientific
+            publications produced annually.
+
+journal.pbio.0020001.txt 10%   
+```
+When this command was run the current directory was plos. What the -m part of the command does is it adds a small percentage, for this example it is the 10% at the bottom, to show how much of the file has been read/ displayed. You can see an increase here when we scroll down a few more lines.
+
+```   
+            the clear inequalities in science between developing and developed countries and to the
+        challenges of building bridges across these gaps that should bring the United Nations and
+        the world scientific community closer to each other (Annan 2003). Mr. Annan stressed the
+        importance of reducing the inequalities in science between developed and developing
+        countries, asserting that <E2><80><9C>This unbalanced distribution of scientific activity generates
+        serious problems not only for the scientific community in the developing countries, but for
+        development itself.<E2><80><9D> Indeed, Mr. Annan's sentiments have also been echoed recently by
+        several scientists, who present overwhelming evidence for the disparity in scientific
+        output between the developing and already developed countries (Gibbs 1995; May 1997;
+        Goldemberg 1998; Riddoch 2000). For example, recent United Nations Educational, Scientific,
+        and Cultural Organization (UNESCO) estimates (UNESCO 2001) indicate that, in 1997, the
+        developed countries accounted for some 84% of the global investment in scientific research
+        and development, had approximately 72% of the world researchers, and produced approximately
+        88% of all scientific and technical publications registered by the Science Citation Index
+        (SCI). North America and Europe clearly dominate the number of scientific publications
+        produced annually, with 36.6% and 37.5%, respectively, worldwide (UNESCO 2001).
+
+
+            North America and Europe clearly dominate the number of scientific
+            publications produced annually.
+
+
+        It is rather obvious that richer countries are able to invest more resources in science
+        and therefore account for the largest number of publications. It is also likely that there
+        is a statistical bias on the part of the SCI as a bibliometric database, since it
+        represents North American and European publications far better than those of the rest of
+        the world (Gibbs 1995; May 1997; Alonso and Fern<C3><A1>ndez-Juricic 2001; Vohora and Vohora
+13%   
+```
+I hit the down arrow key here five times and as you can see the percentage increased as it showed the progress down the text file.
+
+
+
+
+`less -m A_helping_hand.txt` 
+When this command is used in the terminal this is the output:   
+```
+A helping hand for helping hands
+INLAND VALLEY March 9, 2002
+
+Mancy Mintie's Uncommon Good organization pays the school
+debts of attorneys and health-care workers dedicated to serving
+those less fortunate.
+By Joanna Corman / joanna.corman@latimes.com
+Linda Samels Ceballos entered Loyola Law School in Los Angeles
+knowing she wanted to represent the poor. She graduated in 1995
+owing $58,000 in loans.
+She was about to run out of means to pay back those loans when
+she took a job at the Inner City Law Center in Los Angeles, a firm
+that fights slum landlords. It was there that she met Nancy
+Mintie.
+Mintie, a Claremont resident, made it possible for Ceballos to
+represent poor clients against wealthy landlords, a calling about
+as low-paying as lawyer jobs get, and pay off her loans at the same
+time. "It kind of stepped in at the right time," said Ceballos, who
+has loan payments averaging $800 a month and whose starting salary
+was $30,000. "Because of the program, I've been able to stay here.
+... There was no way I could make that payment. I barely make it
+now with my regular bills."
+Mintie, who turns 48 this month, started Uncommon Good in
+16%   
+```
+
+When this command was run the current directory was Media. As you can see there is another percentage located at the bottom of the output, like in the previous example here is the percentage increase as we progress down the text file.   
+
+```
+A helping hand for helping hands
+INLAND VALLEY March 9, 2002
+
+Mancy Mintie's Uncommon Good organization pays the school
+debts of attorneys and health-care workers dedicated to serving
+those less fortunate.
+By Joanna Corman / joanna.corman@latimes.com
+Linda Samels Ceballos entered Loyola Law School in Los Angeles
+knowing she wanted to represent the poor. She graduated in 1995
+owing $58,000 in loans.
+She was about to run out of means to pay back those loans when
+she took a job at the Inner City Law Center in Los Angeles, a firm
+that fights slum landlords. It was there that she met Nancy
+Mintie.
+Mintie, a Claremont resident, made it possible for Ceballos to
+represent poor clients against wealthy landlords, a calling about
+as low-paying as lawyer jobs get, and pay off her loans at the same
+time. "It kind of stepped in at the right time," said Ceballos, who
+has loan payments averaging $800 a month and whose starting salary
+was $30,000. "Because of the program, I've been able to stay here.
+... There was no way I could make that payment. I barely make it
+now with my regular bills."
+Mintie, who turns 48 this month, started Uncommon Good in
+December 1999. The nonprofit operation pays the debts of attorneys
+and health care professionals who work with the poor. It grew out
+of her work at the Inner City Law Center, which she founded in
+19%
+```   
+
+Here I pressed the down arrow key three times and the percentage at the bottome increased as well!
